@@ -46,8 +46,8 @@ machine type are used), resulting code should work fine to my knowledge.
 As long as the used libraries are only "import libraries", the linker will generate
 code and the symbols will be resolved at load time on the device.
 
-Furthermore, the string in the main file "wazzup" needs to be put as the last
-variable into the last compilation unit, to make the linker generate a PE file,
+Furthermore, the string in the main file needs these spaces,
+to make the linker generate a PE file,
 where IMAGE_IMPORT_DESCRIPTOR lands on multiples of 8.
 
 # What is this good for?
